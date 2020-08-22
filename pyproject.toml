@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "everytimeless-bot"
+version = "0.1.0"
+description = "🤖 에타(everytime.kr)의 새 글을 키워드로 감지해 알려주는 텔레그램 봇"
+authors = ["retn0 <nbsp1221@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+beautifulsoup4 = "^4.9.1"
+python = "^3.8"
+python-dotenv = "^0.14.0"
+python-telegram-bot = "^12.8"
+requests = "^2.24.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.6.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
