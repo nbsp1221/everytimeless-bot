@@ -1,8 +1,7 @@
 import dotenv
 import os
 
-# Uncomment the following line to use `.env`.
-# dotenv.load_dotenv(verbose=True)
+dotenv.load_dotenv(verbose=True)
 
 telegram_bot = {
     'token': os.getenv('TELEGRAM_BOT_TOKEN'),
