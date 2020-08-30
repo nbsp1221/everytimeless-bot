@@ -2,6 +2,7 @@
 
 import json
 import os
+import re
 import settings
 import threading
 import time
@@ -34,6 +35,7 @@ def save_datas():
 def get_article_info_with_keywords(number):
     result = et.show_article(number)
     target = (result['title'] + result['content']).lower()
+    target = re.sub(re.compile('<a.*>'), '', target)
 
     return {
         'title': result['title'],
