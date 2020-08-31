@@ -3,5 +3,7 @@ version: '3.2'
 services:
   poetry:
     build: .
+    volumes:
+      - .:/app
     env_file:
       - .env
